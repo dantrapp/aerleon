@@ -1,0 +1,1 @@
+{"seed": 37421, "cases": 500, "batches": 6000, "incoming_networks": 100791, "backends": ["integers", "integer-sort", "direct", "rust"], "checks": "selected object identity, ordering, zones, tokens, FQDN retention after every batch"}

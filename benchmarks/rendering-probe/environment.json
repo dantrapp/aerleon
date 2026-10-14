@@ -1,0 +1,44 @@
+{
+  "baseline_revision": "d916a17052c7b3191019567c07ad9a0a40940b21",
+  "python": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "cpu": "Apple M4",
+  "physical_cores": 10,
+  "logical_cores": 10,
+  "memory_bytes": 17179869184,
+  "renderer_workers": 1,
+  "hash_seed": "0",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)",
+  "native_build": "release",
+  "dependencies": {
+    "PyYAML": "6.0.3",
+    "absl-py": "2.5.1",
+    "typing_extensions": "4.16.0",
+    "pytest": "9.1.1",
+    "psutil": "7.2.2",
+    "pyperf": "2.10.0",
+    "maturin": "1.15.0",
+    "pyo3": "0.29.2"
+  },
+  "packaged_smoke": {
+    "matching_output_files": 51,
+    "backends": [
+      "baseline",
+      "direct+prefix16-batch+collapse-once",
+      "rust+prefix16-batch+collapse-once"
+    ]
+  },
+  "source_sha256": {
+    "candidates.py": "5dc9f72186c684be96bfc2a770a950164f62b01f36918fed3d6066287edb272a",
+    "chained.py": "195181bb6dd0c2b86c61577056d5a6390ba0516d69137d6b8da7eb9fbfab1672",
+    "cli.py": "e9f58a1427f8d928173f685e743087194e8f8f2c8dcdb580591ebb5e42e160c1",
+    "native/Cargo.lock": "525ffe2bf0a2b9a5ee37066af38ae6b05dd30b66c2ebec01b22f306f4052a82c",
+    "native/Cargo.toml": "157a1a6bd76552f08f3a725ca20b32bc2964d8164d549508b026ac18db35567c",
+    "native/pyproject.toml": "041903d57cc77d289ad858501c35af01566c998a17eb864c7d5b87a5a02123c0",
+    "native/src/lib.rs": "4a7af075223e07dd9e8ba3a225a05db2b19de42f9e8a46649af2cd719297b4b6",
+    "probe.py": "d2dc6ec7e248ef73d46aac7cfe5704b173ea6091d5dc829891cd82c2b388b298",
+    "run_tests.py": "be075ff9ce2e2e7fa591bf8eba5df80d7af5b9ff27b482893ad132b4dba48411",
+    "validate.py": "bca4bfcca10af25adabf8ee335da0cca27fc52d4d84bee81a38d8fbd59510210",
+    "validate_chained.py": "f28236155c4f5f1118486b6c572299c2ffca8ec572fb5e63e1111bfef5a5c7ad"
+  }
+}
