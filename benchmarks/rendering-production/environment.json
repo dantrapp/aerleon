@@ -1,0 +1,19 @@
+{
+  "cpu": "Apple M4",
+  "physical_cores": 10,
+  "logical_cores": 10,
+  "memory_bytes": 17179869184,
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "python": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "packages": {
+    "PyYAML": "6.0.3",
+    "absl-py": "2.5.1",
+    "typing_extensions": "4.16.0",
+    "pytest": "9.1.1",
+    "psutil": "7.2.2",
+    "pyperf": "2.10.0"
+  },
+  "renderer_workers": 1,
+  "hash_seed": "0",
+  "cache_policy": "one discarded warmup per backend and workload; no filesystem cache flush"
+}

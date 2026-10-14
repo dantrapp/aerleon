@@ -1,0 +1,91 @@
+{
+  "baseline_revision": "d916a17052c7b3191019567c07ad9a0a40940b21",
+  "candidate_revision": "6530c7375e2dcebafd20d897c559a4c3c920a7a8",
+  "source_sha256": {
+    "aerleon/lib/addressbook.py": "97ec4514d229a397e8e0750b765d2f419d325e8d4901187cd3e766bcb8472508",
+    "aerleon/lib/junipermsmpc.py": "d34fbc005cc7cfea519c34919f579e77f7c15c0446e3ef783ad4399f6f886fc2",
+    "aerleon/lib/junipersrx.py": "4f29849f94df6f662bd00c1fab83d5b820ea16fe713edc6a93c416bf7e82a7e7",
+    "tests/lib/addressbook_test.py": "df74fd70a3634474d8c2f9ee7e5895247c9133f2d9102985b74189b357863b4a",
+    "tests/regression/junipermsmpc/junipermsmpc_test.py": "db8769dc5001b690dc62a82b30a68e05174d1d80c9d522e46c625bc8d12bbef4",
+    "tests/regression/junipersrx/junipersrx_test.py": "e265ea25a00506eb77fd8edbcb24e7359ddd0da11eb76d9915b4b12d2502a3ed"
+  },
+  "pytest": {
+    "3.10": {
+      "python": "Python 3.10.22",
+      "command": "python -m pytest -q",
+      "result": "2207 passed, 18 subtests passed in 8.88s"
+    },
+    "3.14": {
+      "python": "Python 3.14.4",
+      "command": "python -m pytest -q",
+      "result": "2207 passed, 18 subtests passed in 9.26s"
+    },
+    "3.15": {
+      "python": "Python 3.15.0",
+      "command": "python -m pytest -q",
+      "result": "2207 passed, 18 subtests passed in 8.15s"
+    }
+  },
+  "formatting": {
+    "black": {
+      "version": "26.5.1",
+      "command": "python -m black --check aerleon tests noxfile.py",
+      "status": "passed"
+    },
+    "isort": {
+      "version": "9.0.2",
+      "command": "python -m isort --check-only .",
+      "status": "passed"
+    },
+    "pyupgrade": {
+      "version": "3.21.2",
+      "options": [
+        "--py310-plus"
+      ],
+      "scope": "all 136 tracked Python files outside aerleon/_vendor",
+      "status": "passed"
+    },
+    "git_diff_check": "passed"
+  },
+  "typecheck": {
+    "tool": "pyright",
+    "version": "1.1.414",
+    "scope": [
+      "aerleon/lib/addressbook.py",
+      "aerleon/lib/junipermsmpc.py",
+      "aerleon/lib/junipersrx.py",
+      "tests/lib/addressbook_test.py",
+      "tests/regression/junipermsmpc/junipermsmpc_test.py",
+      "tests/regression/junipersrx/junipersrx_test.py"
+    ],
+    "pythonpath": "Python 3.14.4 virtual environment with project dependencies",
+    "baseline_errors": 20,
+    "candidate_errors": 15,
+    "new_diagnostics": 0,
+    "comparison": "multiset of relative path, rule, message; line numbers ignored",
+    "status": "existing errors remain"
+  },
+  "build": {
+    "command": "python -m build",
+    "artifacts": [
+      "aerleon-1.18.0.tar.gz",
+      "aerleon-1.18.0-py3-none-any.whl"
+    ],
+    "status": "passed",
+    "wheel_source_check": "all three changed production source files match"
+  },
+  "limits": [
+    "macOS arm64 only",
+    "free-threaded Python not tested",
+    "hosted CI not verified"
+  ],
+  "packaged_verification": {
+    "matching_output_files": 51,
+    "source_hashes_match_timed_checkouts": true,
+    "script_sha256": {
+      "compare.py": "a436ed33415bb4ff8172bb6c5e28715790a85a353f1cb5ab08bf0520e6b00504",
+      "validate.py": "c3708d1d3bd12f22a8538dc6ffc93217a49a8d8a37c50a4d6a42a7c34f98df3b",
+      "shape_compare.py": "436317f02772c5b6821fa486d5531d7bea56362df3db2fc78e7436ca4096f9ed"
+    }
+  }
+}
